@@ -20,17 +20,17 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222 15% 15%;
     
-    /* Brand Colors - Professional Blues */
-    --primary: 215 28% 17%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 215 28% 35%;
-    --primary-glow: 215 45% 65%;
+    /* Brand Colors - Electric Blue Excitement */
+    --primary: 214 100% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 214 100% 60%;
+    --primary-glow: 214 100% 75%;
     
-    /* Accent - Sophisticated Green for Results */
-    --accent: 158 36% 37%;
-    --accent-foreground: 0 0% 98%;
-    --accent-light: 158 36% 55%;
-    --accent-glow: 158 45% 75%;
+    /* Accent - Vibrant Purple for Results */
+    --accent: 280 100% 70%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 280 100% 80%;
+    --accent-glow: 280 100% 85%;
     
     /* Secondary - Warm Grays */
     --secondary: 220 9% 46%;
@@ -47,23 +47,23 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
     --ring: 215 28% 17%;
     
     /* Status Colors */
-    --success: 158 36% 37%;
-    --success-foreground: 0 0% 98%;
+    --success: 120 100% 40%;
+    --success-foreground: 0 0% 100%;
     --warning: 35 91% 65%;
     --warning-foreground: 222 15% 15%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(215 28% 17%) 0%, hsl(215 28% 25%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(158 36% 37%) 0%, hsl(158 36% 45%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(220 13% 97%) 100%);
+    /* Gradients - Electric Vibes */
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 47%) 0%, hsl(280 100% 70%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(280 100% 70%) 0%, hsl(214 100% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(214 100% 97%) 0%, hsl(280 100% 98%) 100%);
     
-    /* Shadows */
-    --shadow-sm: 0 1px 3px hsl(222 15% 15% / 0.1);
-    --shadow-md: 0 4px 12px hsl(222 15% 15% / 0.08);
-    --shadow-lg: 0 12px 32px hsl(222 15% 15% / 0.1);
-    --shadow-glow: 0 0 32px hsl(215 45% 65% / 0.15);
+    /* Shadows - Electric Glow */
+    --shadow-sm: 0 1px 3px hsl(214 100% 47% / 0.1);
+    --shadow-md: 0 4px 12px hsl(214 100% 47% / 0.15);
+    --shadow-lg: 0 12px 32px hsl(214 100% 47% / 0.2);
+    --shadow-glow: 0 0 40px hsl(214 100% 60% / 0.3);
     
     /* Typography Scale */
     --text-hero: 3.5rem;
@@ -108,13 +108,13 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
     --popover: 222 15% 10%;
     --popover-foreground: 220 13% 95%;
     
-    --primary: 215 45% 65%;
+    --primary: 214 100% 60%;
     --primary-foreground: 222 15% 8%;
-    --primary-light: 215 45% 75%;
+    --primary-light: 214 100% 70%;
     
-    --accent: 158 45% 55%;
+    --accent: 280 100% 75%;
     --accent-foreground: 222 15% 8%;
-    --accent-light: 158 45% 65%;
+    --accent-light: 280 100% 80%;
     
     --secondary: 220 9% 25%;
     --secondary-foreground: 220 13% 95%;
@@ -127,14 +127,14 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
     --input: 222 15% 15%;
     --ring: 215 45% 65%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(222 15% 8%) 0%, hsl(222 15% 12%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(158 45% 35%) 0%, hsl(158 45% 45%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(222 15% 8%) 0%, hsl(222 15% 10%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 30%) 0%, hsl(280 100% 40%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(280 100% 50%) 0%, hsl(214 100% 50%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(222 15% 8%) 0%, hsl(214 100% 10%) 100%);
     
-    --shadow-sm: 0 1px 3px hsl(0 0% 0% / 0.2);
-    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.15);
-    --shadow-lg: 0 12px 32px hsl(0 0% 0% / 0.2);
-    --shadow-glow: 0 0 32px hsl(215 45% 65% / 0.2);
+    --shadow-sm: 0 1px 3px hsl(214 100% 47% / 0.2);
+    --shadow-md: 0 4px 12px hsl(214 100% 47% / 0.25);
+    --shadow-lg: 0 12px 32px hsl(214 100% 47% / 0.3);
+    --shadow-glow: 0 0 40px hsl(214 100% 60% / 0.4);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

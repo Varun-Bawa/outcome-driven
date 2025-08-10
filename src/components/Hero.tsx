@@ -64,7 +64,7 @@ export const Hero = () => {
                 <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 Get in Touch
               </Button>
-              <Button variant="professional" size="lg" className="group">
+              <Button variant="professional" size="lg" className="group" onClick={handleDownloadCV}>
                 <Download className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 Download CV
               </Button>

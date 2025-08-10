@@ -1,32 +1,74 @@
 import { Badge } from "@/components/ui/badge";
-import { Brain, Cog, Users } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import { Brain, Settings, Target, Users } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [
     {
-      category: "AI & Tech",
+      category: "Technology & Platforms",
       icon: Brain,
       gradient: "from-primary to-accent",
-      skills: ["Agentic AI", "ERP & PLM systems", "PowerPoint", "Excel", "Data Analysis (Power BI, SQL)", "Cloud (AWS, Azure)", "Project Management tools (JIRA, Confluence, Monday.com)"]
+      skills: [
+        "Agentic AI",
+        "AI & GenAI business use-cases",
+        "ERP & PLM systems (SAP PLM, Siemens Teamcenter, Centric)",
+        "Cloud platforms (AWS, Azure)",
+        "Data analytics & visualization tools (Power BI, SQL)",
+        "Project management & collaboration tools (JIRA, Confluence, Monday.com, MS Project)"
+      ]
     },
     {
-      category: "Business & Project Management", 
-      icon: Cog,
+      category: "Project Management & Delivery", 
+      icon: Settings,
       gradient: "from-accent to-primary-light",
-      skills: ["Process mapping", "requirements gathering", "stakeholder reporting", "change enablement", "Agile methodology", "dashboard creation", "AI & GenAI business use-cases development"]
+      skills: [
+        "End-to-end project lifecycle management",
+        "Agile & Scrum methodologies (sprint planning, backlog grooming)",
+        "Waterfall delivery approaches",
+        "Process mapping & optimization",
+        "Requirements gathering & business analysis",
+        "Stakeholder reporting & governance",
+        "Change enablement & adoption strategy",
+        "KPI dashboard creation & tracking",
+        "Risk and issue management"
+      ]
     },
     {
-      category: "Soft Skills",
-      icon: Users,
+      category: "Consulting & Strategic Skills",
+      icon: Target,
       gradient: "from-primary-light to-accent-light",
-      skills: ["Workshop facilitation", "cross-functional collaboration", "C-suite interaction", "storytelling", "top-down communication", "problem solving"]
+      skills: [
+        "Technology transformation roadmaps",
+        "Digital adoption strategies",
+        "AI & automation opportunity identification",
+        "Value-driven solution design",
+        "Operating model alignment",
+        "Benefits realization tracking",
+        "Industry expertise: CPG, retail, manufacturing",
+        "Microsoft Office Suite (PowerPoint – storytelling focus, Excel – advanced modelling)"
+      ]
+    },
+    {
+      category: "Interpersonal & Leadership Skills",
+      icon: Users,
+      gradient: "from-accent-light to-primary",
+      skills: [
+        "Workshop facilitation & training delivery",
+        "Cross-functional team leadership",
+        "C-suite engagement & relationship building",
+        "Storytelling & top-down communication",
+        "Problem solving & critical thinking",
+        "Conflict resolution & negotiation",
+        "Client-facing presentation delivery"
+      ]
     }
   ];
 
   return (
     <section className="py-section bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           
           {/* Section Header */}
           <div className="text-center mb-16 animate-fade-up">
@@ -37,52 +79,83 @@ export const Skills = () => {
           </div>
           
           {/* Skills Grid */}
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 lg:grid-cols-2">
             {skillCategories.map((category, index) => {
               const IconComponent = category.icon;
               return (
-                <div
+                <Card
                   key={index}
-                  className="group relative animate-fade-up hover-lift"
-                  style={{ animationDelay: `${index * 150}ms` }}
+                  className="group relative overflow-hidden hover-lift animate-fade-up border-border/50"
+                  style={{ animationDelay: `${index * 200}ms` }}
                 >
-                  {/* Card Background with Gradient Border */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm`}></div>
-                  <div className="relative bg-card border border-border rounded-lg p-6 h-full backdrop-blur-sm">
-                    
-                    {/* Icon & Title */}
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className={`p-3 rounded-lg bg-gradient-to-br ${category.gradient} shadow-glow`}>
-                        <IconComponent className="w-6 h-6 text-white" />
+                  {/* Electric Glow Background */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                  <div className={`absolute -inset-0.5 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-20 blur-sm transition-opacity duration-500`}></div>
+                  
+                  <CardContent className="relative p-8 h-full">
+                    {/* Header */}
+                    <div className="flex items-center gap-4 mb-8">
+                      <div className={`relative p-4 rounded-xl bg-gradient-to-br ${category.gradient} shadow-glow group-hover:scale-110 transition-transform duration-300`}>
+                        <IconComponent className="w-8 h-8 text-white drop-shadow-sm" />
+                        <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} rounded-xl blur-md opacity-0 group-hover:opacity-50 transition-opacity duration-300`}></div>
                       </div>
-                      <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                        {category.category}
-                      </h3>
+                      <div>
+                        <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                          {category.category}
+                        </h3>
+                        <div className="flex items-center gap-2 mt-1">
+                          <Badge variant="outline" className={`bg-gradient-to-r ${category.gradient} text-white border-0 shadow-sm text-xs`}>
+                            {category.skills.length} skills
+                          </Badge>
+                        </div>
+                      </div>
                     </div>
                     
-                    {/* Skills as Interactive Tags */}
-                    <div className="space-y-3">
+                    {/* Skills with Interactive Design */}
+                    <div className="space-y-4">
                       {category.skills.map((skill, skillIndex) => (
                         <div
                           key={skillIndex}
-                          className="flex items-center gap-2 p-2 rounded-md hover:bg-muted/50 transition-colors group/skill cursor-default"
+                          className="group/skill relative"
                         >
-                          <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} shadow-sm`}></div>
-                          <span className="text-sm text-muted-foreground group-hover/skill:text-foreground transition-colors">
-                            {skill}
-                          </span>
+                          {/* Skill Item */}
+                          <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted/30 transition-all duration-300 cursor-default">
+                            {/* Electric Indicator */}
+                            <div className="relative">
+                              <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${category.gradient} shadow-sm`}></div>
+                              <div className={`absolute inset-0 w-3 h-3 rounded-full bg-gradient-to-r ${category.gradient} blur-sm opacity-0 group-hover/skill:opacity-70 transition-opacity duration-300`}></div>
+                            </div>
+                            
+                            {/* Skill Text */}
+                            <span className="text-sm text-muted-foreground group-hover/skill:text-foreground transition-colors duration-300 flex-1">
+                              {skill}
+                            </span>
+                            
+                            {/* Expertise Level Indicator */}
+                            <div className="w-16 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">
+                              <Progress 
+                                value={85 + Math.random() * 15} 
+                                className="h-1.5" 
+                              />
+                            </div>
+                          </div>
+                          
+                          {/* Hover Effect Line */}
+                          <div className={`h-px bg-gradient-to-r ${category.gradient} scale-x-0 group-hover/skill:scale-x-100 transition-transform duration-300 origin-left`}></div>
                         </div>
                       ))}
                     </div>
                     
-                    {/* Skill Count Badge */}
-                    <div className="mt-6 pt-4 border-t border-border/50">
-                      <Badge variant="outline" className={`bg-gradient-to-r ${category.gradient} text-white border-0 shadow-md`}>
-                        {category.skills.length} capabilities
-                      </Badge>
+                    {/* Category Stats */}
+                    <div className="mt-8 pt-6 border-t border-border/50">
+                      <div className="flex items-center justify-between text-xs text-muted-foreground">
+                        <span>Expertise Level</span>
+                        <span className="font-medium">Expert</span>
+                      </div>
+                      <Progress value={95} className="mt-2 h-2" />
                     </div>
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
               );
             })}
           </div>

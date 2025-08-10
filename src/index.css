@@ -2,35 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Portfolio Design System for Sambhavi Gami
-Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
+/* Electric Portfolio Design System for Sambhavi Gami
+Vibrant, modern electric theme with professional edge. All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     /* Background & Surface */
     --background: 0 0% 99%;
-    --foreground: 222 15% 15%;
-    --surface: 0 0% 97%;
+    --foreground: 220 15% 12%;
+    --surface: 210 100% 98%;
     
     /* Cards & Components */
     --card: 0 0% 100%;
-    --card-foreground: 222 15% 15%;
+    --card-foreground: 220 15% 12%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 222 15% 15%;
+    --popover-foreground: 220 15% 12%;
     
-    /* Brand Colors - Electric Blue Excitement */
-    --primary: 214 100% 47%;
-    --primary-foreground: 0 0% 100%;
-    --primary-light: 214 100% 60%;
-    --primary-glow: 214 100% 75%;
+    /* Brand Colors - Electric Cyan */
+    --primary: 188 100% 50%;
+    --primary-foreground: 220 15% 12%;
+    --primary-light: 188 100% 65%;
+    --primary-glow: 188 100% 80%;
     
-    /* Accent - Vibrant Purple for Results */
-    --accent: 280 100% 70%;
+    /* Accent - Electric Magenta */
+    --accent: 320 100% 60%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 280 100% 80%;
-    --accent-glow: 280 100% 85%;
+    --accent-light: 320 100% 75%;
+    --accent-glow: 320 100% 85%;
     
     /* Secondary - Warm Grays */
     --secondary: 220 9% 46%;
@@ -54,16 +54,16 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     
-    /* Gradients - Electric Vibes */
-    --gradient-hero: linear-gradient(135deg, hsl(214 100% 47%) 0%, hsl(280 100% 70%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(280 100% 70%) 0%, hsl(214 100% 60%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(214 100% 97%) 0%, hsl(280 100% 98%) 100%);
+    /* Gradients - Electric Energy */
+    --gradient-hero: linear-gradient(135deg, hsl(188 100% 50%) 0%, hsl(320 100% 60%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(320 100% 60%) 0%, hsl(188 100% 65%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(188 100% 98%) 0%, hsl(320 100% 98%) 100%);
     
     /* Shadows - Electric Glow */
-    --shadow-sm: 0 1px 3px hsl(214 100% 47% / 0.1);
-    --shadow-md: 0 4px 12px hsl(214 100% 47% / 0.15);
-    --shadow-lg: 0 12px 32px hsl(214 100% 47% / 0.2);
-    --shadow-glow: 0 0 40px hsl(214 100% 60% / 0.3);
+    --shadow-sm: 0 1px 3px hsl(188 100% 50% / 0.1);
+    --shadow-md: 0 4px 12px hsl(188 100% 50% / 0.15);
+    --shadow-lg: 0 12px 32px hsl(188 100% 50% / 0.2);
+    --shadow-glow: 0 0 40px hsl(188 100% 65% / 0.4);
     
     /* Typography Scale */
     --text-hero: 3.5rem;
@@ -97,24 +97,24 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark Mode - Professional Night Theme */
-    --background: 222 15% 8%;
-    --foreground: 220 13% 95%;
-    --surface: 222 15% 10%;
+    /* Dark Mode - Electric Night Theme */
+    --background: 220 15% 5%;
+    --foreground: 188 100% 95%;
+    --surface: 220 15% 8%;
     
-    --card: 222 15% 10%;
-    --card-foreground: 220 13% 95%;
+    --card: 220 15% 8%;
+    --card-foreground: 188 100% 95%;
     
-    --popover: 222 15% 10%;
-    --popover-foreground: 220 13% 95%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 188 100% 95%;
     
-    --primary: 214 100% 60%;
-    --primary-foreground: 222 15% 8%;
-    --primary-light: 214 100% 70%;
+    --primary: 188 100% 65%;
+    --primary-foreground: 220 15% 5%;
+    --primary-light: 188 100% 75%;
     
-    --accent: 280 100% 75%;
-    --accent-foreground: 222 15% 8%;
-    --accent-light: 280 100% 80%;
+    --accent: 320 100% 70%;
+    --accent-foreground: 220 15% 5%;
+    --accent-light: 320 100% 80%;
     
     --secondary: 220 9% 25%;
     --secondary-foreground: 220 13% 95%;
@@ -127,14 +127,14 @@ Contemporary, editorial feel with calm tech vibe. All colors MUST be HSL.
     --input: 222 15% 15%;
     --ring: 215 45% 65%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(214 100% 30%) 0%, hsl(280 100% 40%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(280 100% 50%) 0%, hsl(214 100% 50%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(222 15% 8%) 0%, hsl(214 100% 10%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(188 100% 40%) 0%, hsl(320 100% 50%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(320 100% 60%) 0%, hsl(188 100% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 15% 5%) 0%, hsl(188 100% 8%) 100%);
     
-    --shadow-sm: 0 1px 3px hsl(214 100% 47% / 0.2);
-    --shadow-md: 0 4px 12px hsl(214 100% 47% / 0.25);
-    --shadow-lg: 0 12px 32px hsl(214 100% 47% / 0.3);
-    --shadow-glow: 0 0 40px hsl(214 100% 60% / 0.4);
+    --shadow-sm: 0 1px 3px hsl(188 100% 50% / 0.3);
+    --shadow-md: 0 4px 12px hsl(188 100% 50% / 0.4);
+    --shadow-lg: 0 12px 32px hsl(188 100% 50% / 0.5);
+    --shadow-glow: 0 0 40px hsl(188 100% 65% / 0.6);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

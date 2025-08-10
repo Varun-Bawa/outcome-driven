@@ -1,8 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Linkedin, Download, MapPin, MessageCircle } from "lucide-react";
+import fileDownload from "js-file-download";
 
 export const Contact = () => {
+  const handleDownloadCV = () => {
+    fetch('/cv-sambhavi-gami.pdf')
+      .then(response => response.blob())
+      .then(blob => {
+        fileDownload(blob, 'Sambhavi-Gami-CV.pdf');
+      })
+      .catch(error => {
+        console.error('Error downloading CV:', error);
+      });
+  };
+
   return (
     <section className="py-section bg-gradient-subtle">
       <div className="container mx-auto px-6">
@@ -75,7 +87,7 @@ export const Contact = () => {
                     </a>
                   </Button>
                   
-                  <Button variant="professional" size="xl" className="w-full group">
+                  <Button variant="professional" size="xl" className="w-full group" onClick={handleDownloadCV}>
                     <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
                     Download CV
                   </Button>

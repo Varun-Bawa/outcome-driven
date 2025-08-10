@@ -62,6 +62,7 @@ export const Hero = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="cta" size="lg" className="group">
+                <a href="mailto:Sam15Gami@gmail.com">
                 <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
                 Get in Touch
               </Button>

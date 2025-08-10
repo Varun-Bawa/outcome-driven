@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Download, MapPin } from "lucide-react";
+import { NetworkAnimation } from "./NetworkAnimation";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden">
+      {/* Network Animation Background */}
+      <NetworkAnimation />
+      
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-20 w-64 h-64 bg-primary-glow/10 rounded-full blur-3xl"></div>

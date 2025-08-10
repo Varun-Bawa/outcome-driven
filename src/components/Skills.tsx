@@ -79,7 +79,7 @@ export const Skills = () => {
           </div>
           
           {/* Skills Grid */}
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-4">
             {skillCategories.map((category, index) => {
               const IconComponent = category.icon;
               return (

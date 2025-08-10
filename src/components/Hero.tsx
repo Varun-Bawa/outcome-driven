@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Download, MapPin } from "lucide-react";
 import { NetworkAnimation } from "./NetworkAnimation";
+import fileDownload from "js-file-download";
 
 export const Hero = () => {
   const handleDownloadCV = () => {

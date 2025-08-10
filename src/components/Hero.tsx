@@ -3,6 +3,17 @@ import { Mail, Linkedin, Download, MapPin } from "lucide-react";
 import { NetworkAnimation } from "./NetworkAnimation";
 
 export const Hero = () => {
+  const handleDownloadCV = () => {
+    fetch('/cv-sambhavi-gami.pdf')
+      .then(response => response.blob())
+      .then(blob => {
+        fileDownload(blob, 'Sambhavi-Gami-CV.pdf');
+      })
+      .catch(error => {
+        console.error('Error downloading CV:', error);
+      });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-subtle overflow-hidden">
       {/* Network Animation Background */}

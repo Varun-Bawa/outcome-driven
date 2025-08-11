@@ -21,7 +21,7 @@ export const Skills = () => {
       ]
     },
     {
-      category: "Project Mgmt & Delivery", 
+      category: "Project Management", 
       icon: Settings,
       gradient: "from-accent to-primary-light",
       skills: [

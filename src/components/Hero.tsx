@@ -88,7 +88,7 @@ export const Hero = () => {
                 <img
                   src="/lovable-uploads/Profile photo.jpg"
                   alt="Sambhavi Gami - Technology Consultant"
-                  className="w-100 h-100 object-cover rounded-full"
+                  className="w-100 h-110 object-cover rounded-full"
                 />
               </div>
             </div>

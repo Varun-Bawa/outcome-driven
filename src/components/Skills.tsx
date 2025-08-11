@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Brain, Settings, Target, Users } from "lucide-react";
 
+import { NetworkAnimation } from "./NetworkAnimation";
+
 export const Skills = () => {
   const skillCategories = [
     {
@@ -66,8 +68,11 @@ export const Skills = () => {
   ];
 
   return (
-    <section className="py-section bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-section bg-background relative overflow-hidden">
+      {/* Network Animation Background */}
+      <NetworkAnimation />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           
           {/* Section Header */}
@@ -103,11 +108,6 @@ export const Skills = () => {
                         <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                           {category.category}
                         </h3>
-                        <div className="flex items-center gap-2 mt-1">
-                          <Badge variant="outline" className={`bg-gradient-to-r ${category.gradient} text-white border-0 shadow-sm text-xs`}>
-                            {category.skills.length} skills
-                          </Badge>
-                        </div>
                       </div>
                     </div>
                     
@@ -131,28 +131,12 @@ export const Skills = () => {
                               {skill}
                             </span>
                             
-                            {/* Expertise Level Indicator */}
-                            <div className="w-16 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">
-                              <Progress 
-                                value={85 + Math.random() * 15} 
-                                className="h-1.5" 
-                              />
-                            </div>
                           </div>
                           
                           {/* Hover Effect Line */}
                           <div className={`h-px bg-gradient-to-r ${category.gradient} scale-x-0 group-hover/skill:scale-x-100 transition-transform duration-300 origin-left`}></div>
                         </div>
                       ))}
-                    </div>
-                    
-                    {/* Category Stats */}
-                    <div className="mt-8 pt-6 border-t border-border/50">
-                      <div className="flex items-center justify-between text-xs text-muted-foreground">
-                        <span>Expertise Level</span>
-                        <span className="font-medium">Expert</span>
-                      </div>
-                      <Progress value={95} className="mt-2 h-2" />
                     </div>
                   </CardContent>
                 </Card>

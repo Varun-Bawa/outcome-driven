@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2 } from "lucide-react";
+import { NetworkAnimation } from "./NetworkAnimation";
 
 export const Experience = () => {
   const projects = [
@@ -55,8 +56,11 @@ export const Experience = () => {
   ];
 
   return (
-    <section className="py-section bg-surface">
-      <div className="container mx-auto px-6">
+    <section className="py-section bg-surface relative overflow-hidden">
+      {/* Network Animation Background */}
+      <NetworkAnimation />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           
           {/* Section Header */}

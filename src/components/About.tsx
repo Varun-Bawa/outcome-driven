@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { NetworkAnimation } from "./NetworkAnimation";
 
 export const About = () => {
   const credentials = [
@@ -7,8 +8,11 @@ export const About = () => {
   ];
 
   return (
-    <section className="py-section bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-section bg-background relative overflow-hidden">
+      {/* Network Animation Background */}
+      <NetworkAnimation />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           
           {/* Section Header */}

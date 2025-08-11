@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Linkedin, Download, MapPin, MessageCircle } from "lucide-react";
 import fileDownload from "js-file-download";
+import { NetworkAnimation } from "./NetworkAnimation";
 
 export const Contact = () => {
   const handleDownloadCV = () => {
@@ -16,8 +17,11 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-section bg-gradient-subtle">
-      <div className="container mx-auto px-6">
+    <section className="py-section bg-gradient-subtle relative overflow-hidden">
+      {/* Network Animation Background */}
+      <NetworkAnimation />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           
           {/* Section Header */}

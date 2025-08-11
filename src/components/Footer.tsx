@@ -10,7 +10,7 @@ export const Footer = () => {
           
           <div className="border-t border-primary-foreground/20 pt-4">
             <p className="text-sm text-primary-foreground/60">
-              © 2024 Sambhavi Gami. Available for consulting & permanent opportunities.
+              © 2025 Sambhavi Gami. Available for consulting & permanent opportunities.
             </p>
           </div>
         </div>

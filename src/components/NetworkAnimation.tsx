@@ -78,10 +78,11 @@ export const NetworkAnimation = () => {
         node.y = Math.max(0, Math.min(canvas.offsetHeight, node.y));
       });
 
-      // Draw connections
-      ctx.strokeStyle = 'hsl(188, 100%, 50%)'; // Electric cyan
-      ctx.lineWidth = 0.8;
-      ctx.globalAlpha = 0.15;
+      // Draw connections with theme awareness
+      const isDark = document.documentElement.classList.contains('dark');
+      ctx.strokeStyle = isDark ? 'hsl(188, 100%, 50%)' : 'hsl(188, 100%, 35%)'; // Electric cyan
+      ctx.lineWidth = isDark ? 0.8 : 1.2;
+      ctx.globalAlpha = isDark ? 0.15 : 0.25;
 
       nodesRef.current.forEach((node, i) => {
         node.connections.forEach(connectionIndex => {
@@ -94,7 +95,7 @@ export const NetworkAnimation = () => {
             
             if (distance < 120) {
               const opacity = 1 - (distance / 120);
-              ctx.globalAlpha = opacity * 0.3;
+              ctx.globalAlpha = opacity * (isDark ? 0.3 : 0.4);
               
               ctx.beginPath();
               ctx.moveTo(node.x, node.y);
@@ -105,9 +106,9 @@ export const NetworkAnimation = () => {
         });
       });
 
-      // Draw nodes
-      ctx.globalAlpha = 0.6;
-      ctx.fillStyle = 'hsl(188, 100%, 50%)'; // Electric cyan
+      // Draw nodes with theme awareness
+      ctx.globalAlpha = isDark ? 0.6 : 0.8;
+      ctx.fillStyle = isDark ? 'hsl(188, 100%, 50%)' : 'hsl(188, 100%, 35%)'; // Electric cyan
       
       nodesRef.current.forEach(node => {
         ctx.beginPath();
@@ -116,13 +117,13 @@ export const NetworkAnimation = () => {
         
         // Add glow effect for some nodes
         if (Math.random() > 0.98) {
-          ctx.globalAlpha = 0.3;
-          ctx.fillStyle = 'hsl(324, 100%, 70%)'; // Electric magenta
+          ctx.globalAlpha = isDark ? 0.3 : 0.5;
+          ctx.fillStyle = isDark ? 'hsl(324, 100%, 70%)' : 'hsl(324, 100%, 50%)'; // Electric magenta
           ctx.beginPath();
           ctx.arc(node.x, node.y, 4, 0, Math.PI * 2);
           ctx.fill();
-          ctx.fillStyle = 'hsl(188, 100%, 50%)';
-          ctx.globalAlpha = 0.6;
+          ctx.fillStyle = isDark ? 'hsl(188, 100%, 50%)' : 'hsl(188, 100%, 35%)';
+          ctx.globalAlpha = isDark ? 0.6 : 0.8;
         }
       });
 

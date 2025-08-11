@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Workflow, Database, Bot } from "lucide-react";
+import { NetworkAnimation } from "./NetworkAnimation";
 
 export const Capabilities = () => {
   const capabilities = [
@@ -40,8 +41,11 @@ export const Capabilities = () => {
   ];
 
   return (
-    <section className="py-section bg-background">
-      <div className="container mx-auto px-6">
+    <section className="py-section bg-background relative overflow-hidden">
+      {/* Network Animation Background */}
+      <NetworkAnimation />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           
           {/* Section Header */}

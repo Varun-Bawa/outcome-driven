@@ -15,8 +15,8 @@ export const Skills = () => {
         "Agentic AI & GenAI use-cases for business",
         "ERP & PLM (SAP, Teamcenter, Centric)",
         "Python for automation & AI prototyping",
-        "Cloud platforms <br>(AWS, Azure, GCP)",
-        "Data analytics & visualization (Power BI, SQL)",
+        "Cloud platforms "<br/>"(AWS, Azure, GCP)",
+        "Data analysis & reporting (Power BI, SQL)",
         "Project management tools (JIRA, Confluence)"
       ]
     },
@@ -29,7 +29,7 @@ export const Skills = () => {
         "Agile frameworks & sprint planning",
         "Stakeholder reporting and KPI tracking",
         "Process mapping and requirements gathering",
-        "Change & adoption planning for new systems",
+        "Change management & adoption planning",
         "Waterfall delivery for structured delivery"
       ]
     },
@@ -41,7 +41,7 @@ export const Skills = () => {
         "Digital transformation & technology roadmaps",
         "AI/automation identification & scoping",
         "Value-driven design for client impact",
-        "Digital adoption and operational improvement",
+        "Digital adoption & ops improvement",
         "Operating model & business alignment",
         "Expertise in CPG, retail, and manufacturing"
       ]

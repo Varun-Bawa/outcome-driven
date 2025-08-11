@@ -12,12 +12,12 @@ export const Skills = () => {
       icon: Brain,
       gradient: "from-primary to-accent",
       skills: [
-        "Agentic AI",
-        "AI & GenAI business use-cases",
-        "ERP & PLM systems (SAP PLM, Siemens Teamcenter, Centric)",
-        "Cloud platforms (AWS, Azure)",
+        "Agentic AI & GenAI use-cases for business",
+        "ERP & PLM systems (SAP, Teamcenter, Centric)",
+        "Python for automation & AI prototyping",
+        "Cloud platforms (AWS, Azure, GCP)",
         "Data analytics & visualization tools (Power BI, SQL)",
-        "Project management & collaboration tools (JIRA, Confluence, Monday.com, MS Project)"
+        "Project management tools (JIRA, Confluence)"
       ]
     },
     {
@@ -26,43 +26,37 @@ export const Skills = () => {
       gradient: "from-accent to-primary-light",
       skills: [
         "End-to-end project lifecycle management",
-        "Agile & Scrum methodologies (sprint planning, backlog grooming)",
-        "Waterfall delivery approaches",
-        "Process mapping & optimization",
-        "Requirements gathering & business analysis",
-        "Stakeholder reporting & governance",
-        "Change enablement & adoption strategy",
-        "KPI dashboard creation & tracking",
-        "Risk and issue management"
+        "Agile & Scrum frameworks, sprint & retro planning",
+        "Stakeholder governance, reporting, and KPI tracking",
+        "Process mapping, requirements gathering, and optimization",
+        "Change enablement & adoption planning for new systems",
+        "Waterfall delivery for structured implementation"
       ]
     },
     {
-      category: "Consulting & Strategic Skills",
+      category: "Consulting & Strategy",
       icon: Target,
       gradient: "from-primary-light to-accent-light",
       skills: [
-        "Technology transformation roadmaps",
-        "Digital adoption strategies",
-        "AI & automation opportunity identification",
-        "Value-driven solution design",
-        "Operating model alignment",
-        "Benefits realization tracking",
-        "Industry expertise: CPG, retail, manufacturing",
-        "Microsoft Office Suite (PowerPoint – storytelling focus, Excel – advanced modelling)"
+        "Digital transformation & technology roadmaps",
+        "AI/automation opportunity identification & scoping",
+        "Value-driven solution design for client impact",
+        "Digital adoption and operational improvement strategies",
+        "Operating model alignment with business objectives",
+        "Industry expertise in CPG, retail, and manufacturing"
       ]
     },
     {
-      category: "Interpersonal & Leadership Skills",
+      category: "Leadership & Communication",
       icon: Users,
       gradient: "from-accent-light to-primary",
       skills: [
-        "Workshop facilitation & training delivery",
-        "Cross-functional team leadership",
-        "C-suite engagement & relationship building",
-        "Storytelling & top-down communication",
-        "Problem solving & critical thinking",
-        "Conflict resolution & negotiation",
-        "Client-facing presentation delivery"
+        "C-suite engagement & strategic relationship building",
+        "Cross-functional team leadership across global teams",
+        "Workshop facilitation & stakeholder alignment sessions",
+        "Storytelling & structured top-down communication",
+        "Client-facing presentations & negotiation skills",
+        "Problem solving & critical thinking in complex contexts"
       ]
     }
   ];

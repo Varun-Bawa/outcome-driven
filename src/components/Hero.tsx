@@ -86,9 +86,9 @@ export const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-accent rounded-full opacity-20 animate-pulse"></div>
               <div className="relative bg-card rounded-full p-1 shadow-lg">
                 <img
-                  src="/lovable-uploads/8878c9fb-3497-44c1-a144-b1e42badec83.png"
+                  src="/lovable-uploads/Profile photo.jpg"
                   alt="Sambhavi Gami - Technology Consultant"
-                  className="w-80 h-80 object-cover rounded-full"
+                  className="w-100 h-100 object-cover rounded-full"
                 />
               </div>
             </div>

@@ -16,7 +16,7 @@ export const Skills = () => {
         "ERP & PLM (SAP, Teamcenter, Centric)",
         "Python for automation & AI prototyping",
         "Cloud platforms (AWS, Azure, GCP)",
-        "Data analysis & reporting (Power BI, SQL)",
+        "Data analysis & reporting (Power BI)",
         "Project management tools (JIRA, Confluence)"
       ]
     },

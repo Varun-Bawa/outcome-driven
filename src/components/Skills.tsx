@@ -15,7 +15,7 @@ export const Skills = () => {
         "Agentic AI & GenAI use-cases for business",
         "ERP & PLM (SAP, Teamcenter, Centric)",
         "Python for automation & AI prototyping",
-        "Cloud platforms "<br/>"(AWS, Azure, GCP)",
+        "Cloud platforms (AWS, Azure, GCP)",
         "Data analysis & reporting (Power BI, SQL)",
         "Project management tools (JIRA, Confluence)"
       ]

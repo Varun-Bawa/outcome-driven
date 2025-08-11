@@ -13,24 +13,24 @@ export const Skills = () => {
       gradient: "from-primary to-accent",
       skills: [
         "Agentic AI & GenAI use-cases for business",
-        "ERP & PLM systems (SAP, Teamcenter, Centric)",
+        "ERP & PLM (SAP, Teamcenter, Centric)",
         "Python for automation & AI prototyping",
-        "Cloud platforms (AWS, Azure, GCP)",
-        "Data analytics & visualization tools (Power BI, SQL)",
+        "Cloud platforms <br>(AWS, Azure, GCP)",
+        "Data analytics & visualization (Power BI, SQL)",
         "Project management tools (JIRA, Confluence)"
       ]
     },
     {
-      category: "Project Management & Delivery", 
+      category: "Project Mgmt & Delivery", 
       icon: Settings,
       gradient: "from-accent to-primary-light",
       skills: [
         "End-to-end project lifecycle management",
-        "Agile & Scrum frameworks, sprint & retro planning",
-        "Stakeholder governance, reporting, and KPI tracking",
-        "Process mapping, requirements gathering, and optimization",
-        "Change enablement & adoption planning for new systems",
-        "Waterfall delivery for structured implementation"
+        "Agile frameworks & sprint planning",
+        "Stakeholder reporting and KPI tracking",
+        "Process mapping and requirements gathering",
+        "Change & adoption planning for new systems",
+        "Waterfall delivery for structured delivery"
       ]
     },
     {
@@ -39,11 +39,11 @@ export const Skills = () => {
       gradient: "from-primary-light to-accent-light",
       skills: [
         "Digital transformation & technology roadmaps",
-        "AI/automation opportunity identification & scoping",
-        "Value-driven solution design for client impact",
-        "Digital adoption and operational improvement strategies",
-        "Operating model alignment with business objectives",
-        "Industry expertise in CPG, retail, and manufacturing"
+        "AI/automation identification & scoping",
+        "Value-driven design for client impact",
+        "Digital adoption and operational improvement",
+        "Operating model & business alignment",
+        "Expertise in CPG, retail, and manufacturing"
       ]
     },
     {
@@ -51,12 +51,12 @@ export const Skills = () => {
       icon: Users,
       gradient: "from-accent-light to-primary",
       skills: [
-        "C-suite engagement & strategic relationship building",
-        "Cross-functional team leadership across global teams",
-        "Workshop facilitation & stakeholder alignment sessions",
-        "Storytelling & structured top-down communication",
-        "Client-facing presentations & negotiation skills",
-        "Problem solving & critical thinking in complex contexts"
+        "C-suite engagement & relationship building",
+        "Cross-functional team leadership",
+        "Workshop facilitation & stakeholder alignment",
+        "Structured top-down communication",
+        "Client presentations & negotiation skills",
+        "Problem solving & critical thinking"
       ]
     }
   ];
